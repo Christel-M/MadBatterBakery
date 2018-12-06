@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Mad Batter</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul>
+        <li><a href="/">About</a></li>
+        <li><a href="/catalog">Catalog</a></li>
+        <li><a href="/">Contact</a></li>
+        <a href="/"><img class="logo" src="images/logo.png"></a>
+        <li><a href="/cakes">Cake</a></li>
+        <li><a href="/cookies">Cookies</a></li>
+        <li><a href="/muffins">Muffin</a></li>
+        <a href="/"><img class="cart" src="http://www.clker.com/cliparts/U/D/n/G/6/h/white-shopping-cart-md.png"></a>
+      </ul>
+    </nav>
+
+    <%= yield %>
+
+    <footer class="footer-grid">
+        <div class="footer-nav">
+          <ul>
+            <li><a href="/cakes">Cake</a></li>
+            <li><a href="/cookies">Cookies</a></li>
+            <li><a href="/muffins">Muffin</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="social-icons center">
+            <a href="https://www.instagram.com" target="_blank"><img src="https://alumni.harvard.edu/sites/default/files/page/instagram-logo-white.png"></a>
+            <a href="https://www.facebook.com" target="_blank"><img src="https://www.belmontbev.com/wp-content/uploads/2018/01/facebook-icon-300x300.png"></a>
+            <a href="https://www.twitter.com" target="_blank"><img src="https://png.pngtree.com/element_our/md/20180509/md_5af2d4c9325e1.png"></a>
+          </div>
+        </div>
+
+        <div>
+          <form class="mailinglist center">
+            <label style="color: white;">Get In Touch:</label><br>
+            <input type="email" name="email" placeholder="Email address"> <br>
+            <input type="submit" value="Join Us!">
+          </form>
+        </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
