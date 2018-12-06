@@ -21,6 +21,12 @@ class Cookie < Products
     super(name, description, price, quantity, images)
     COOKIES << self
   end
+
+  def related_products
+    $rel_products = COOKIES[rand(COOKIES.length)]
+    # return $rel_products
+  end
+
 end
 
 class Cake < Products

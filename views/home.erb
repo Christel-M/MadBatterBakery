@@ -4,22 +4,22 @@
     <h1 class="hero-text">Mad Batter</h1>
   </div>
 
-  <div class="product-grid center">
-    <div class="product-display">
+  <div class="home-product center">
+    <div class="home-subproduct">
       <img src="https://hanslodge.com/images2/biscuit-clipart-cute-cookie/5cb6012a490f712819298d04f248aafd_download-cookie-free-png-transparent-image-and-clipart_400-402.png">
       <p><strong>COOKIES</strong></p>
       <p>From our oven to your tummy, our cookies are always fresh and hand-made with love.</p>
       <a href="/cookies" class="primary-btn">View More</a>
     </div>
 
-    <div class="product-display">
+    <div class="home-subproduct">
       <img src="https://i.pinimg.com/originals/2c/63/fc/2c63fcdee5fdfa437ce79b135bc0e67d.png">
       <p><strong>CAKES</strong></p>
       <p>We craft our cakes with only the finest ingredients, premium specialty chocolates and exceptional liqueurs.</p>
       <a href="/cakes" class="primary-btn">View More</a>
     </div>
 
-    <div class="product-display">
+    <div class="home-subproduct">
       <img src="http://images.clipartpanda.com/cupcake-clipart-Cupcake-clipart-on-clip-art-cupcake-and-mickey-cupcakes.png">
       <p><strong>MUFFINS</strong></p>
       <p>From our oven to your tummy, our muffins are baked and topped with natural ingredients every day.</p>
@@ -27,9 +27,29 @@
     </div>
   </div>
 
-  <div class="email-catalog">
-    <img src="https://images.unsplash.com/photo-1477040648049-a289a91626c1?ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80">
-    <p>View our full selection of cakes, cookies, and muffins</p>
-    <a href="/muffins" class="primary-btn">REQUEST CATALOG</a>
+  <div class="catalog-email">
+    <div></div>
+    <div>
+      <p class="center">View our full selection of cakes, cookies, and muffins. &nbsp &nbsp
+      <a id="catalog-btn" class="primary-btn">Request Catalog</a></p>
+    </div>
+  </div>
+
+    <div class="catalog-modal center hidden">
+      <div class="catalog-content">
+        <span class="close">&times;</span>
+      <form class="catalog-form" method="post">
+        Name: &nbsp &nbsp
+        <input type="text" name="name" placeholder="Name"> &nbsp &nbsp
+        Email: &nbsp &nbsp
+        <input type="email" name="email" placeholder="Email address"> &nbsp
+        <input id="submitBtn" class="primary-btn" type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+  <div class="alert-box center hidden">
+    <span class="closebtn">&times;</span>
+    <p>Thank You <%=@name%>! </p>
+      <p>You'll receive an email shortly.</p>
   </div>
 </section>

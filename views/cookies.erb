@@ -1,9 +1,17 @@
-<div class="product-grid center">
-<%COOKIES.each do |cookie| %>
-  <div class="product-display">
-    <img src=<%=cookie.images%>>
-    <p><strong><%=cookie.name%></strong> &nbsp $<%=cookie.price%></p>
-    <p><%=cookie.description%></p>
+<section class="page-grid">
+  <div class="products-hero center">
+    <h1>Cookies</h1>
+    <p>Our cookies are homemade and baked in small batches from morning 'til night. You can be assured there will always be a batch fresh from the oven when you visit.</p>
   </div>
-  <%end%>
-</div>
+
+  <div class="product-grid center">
+    <%COOKIES.each do |cookie| %>
+    <div class="product-display">
+      <img src=<%=cookie.images%>> <br>
+      <span><strong><%=cookie.name%> &nbsp
+      $<%=cookie.price.round(2)%></strong></span>
+    </div>
+    <%end%>
+  </div>
+
+</section>

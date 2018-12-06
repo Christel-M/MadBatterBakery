@@ -1,9 +1,9 @@
 <div class="product-grid center">
-<%PRODUCTS.each do |cookie| %>
+<%PRODUCTS.each do |product| %>
   <div class="product-display">
-    <img src=<%=cookie.images%>>
-    <p><strong><%=cookie.name%></strong> &nbsp $<%=cookie.price%></p>
-    <p><%=cookie.description%></p>
+    <img src=<%=product.images%>>
+    <p><strong><%=product.name%></strong> &nbsp $<%=product.price%></p>
+    <p><%=product.description%></p>
   </div>
   <%end%>
 </div>
