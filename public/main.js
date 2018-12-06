@@ -31,3 +31,11 @@ function closeWindow2() {
   var modal = document.querySelector(".alert-box");
   modal.classList.add("hidden");
 }
+
+var button = document.getElementById("showdes");
+button.addEventListener("click", showDescription);
+
+function showDescription(){
+  var description = document.querySelector(".product-description");
+  description.classList.remove("hidden");
+}

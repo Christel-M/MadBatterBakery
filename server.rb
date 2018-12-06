@@ -1,7 +1,7 @@
 require "sinatra"
 require "sinatra/reloader"
 require "./class.rb"
-# require "./email.rb"
+require "./email.rb"
 require "pp"
 
 #Cookies
@@ -12,20 +12,22 @@ Cookie.new("Peppermint Bark", "A festive holiday favorite made with white chocol
 Cookie.new("Rocky Road", "An ice cream-inspired cookie loaded with almonds, chocolate & marshmallows.", 5.62, 40, "https://milkjarcookies.com/pub/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/r/o/rocky-road_1.png")
 Cookie.new("White Chocolate Raspberry", "A beautiful, delicately sweet cookie set off by tart fresh raspberry.", 6.98, 55, "https://milkjarcookies.com/pub/media/catalog/product/cache/image/700x700/e9c3970ab036de70892d86c6d221abfe/w/h/white-chocolate-raspberry_1.png")
 
-
 # pp PRODUCTS
 
+def send_email(name,recipient)
+  Newsletter.welcome(name, recipient).deliver_now
+end
 
 get "/" do
   erb :home
 end
-# 
-# post "/" do
-#   name = params["name"]
-#   recipient = params["email"]
-#   send_email(name, recipient)
-#   erb :home
-# end
+
+post "/" do
+  name = params["name"]
+  recipient = params["email"]
+  send_email(name, recipient)
+  erb :home
+end
 
 get "/cookies" do
   erb :cookies

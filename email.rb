@@ -19,8 +19,4 @@ class Newsletter < ActionMailer::Base
          subject: "Hi #{name}, Here\'s the Mad Batter 2018 Catalog!")
   end
 
-  def send_email(name,recipient)
-    Newsletter.welcome(name, recipient).deliver_now
-  end
-
 end

@@ -8,8 +8,21 @@
     <%COOKIES.each do |cookie| %>
     <div class="product-display">
       <img src=<%=cookie.images%>> <br>
+      <p><strong><%=cookie.name%> &nbsp
+      $<%=cookie.price.round(2)%></strong></p>
+      <a id="showdes" class="primary-btn">View Product</a>
+    </div>
+    <%end%>
+  </div>
+
+  <div class="product-description hidden">
+    <%COOKIES.each do |cookie| %>
+    <div class="description-modal">
+      <img src=<%=cookie.images%>> <br>
       <span><strong><%=cookie.name%> &nbsp
-      $<%=cookie.price.round(2)%></strong></span>
+      $<%=cookie.price.round(2)%></strong></span><br>
+      <p><%=cookie.description%></p>
+      <button class="addtocart-btn" type="button" name="button">Add To Cart</a>
     </div>
     <%end%>
   </div>
