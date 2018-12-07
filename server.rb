@@ -68,3 +68,7 @@ end
 get "/contact" do
   erb :contact
 end
+
+get "/cart" do
+  erb :cart
+end

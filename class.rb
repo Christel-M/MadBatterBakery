@@ -2,6 +2,7 @@ COOKIES = []
 CAKES = []
 MUFFINS = []
 PRODUCTS = []
+CART = []
 
 class Products
   attr_accessor :name, :description, :price, :quantity, :images
@@ -14,6 +15,12 @@ class Products
 
     PRODUCTS << self
   end
+
+  def add_to_cart(name, price, qty)
+    CART << self
+    cart = Cart.new(name, price, qty)
+  end
+
 end
 
 class Cookie < Products
@@ -41,4 +48,16 @@ class Muffin < Products
     super(name, description, price, quantity, images)
     MUFFINS << self
   end
+end
+
+class Cart
+  attr_accessor :name, :price, :quantity
+  def initialize(name, price, qty)
+    @name = name
+    @price = price
+    @qty = qty
+
+    CART << self
+  end
+
 end
