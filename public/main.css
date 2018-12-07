@@ -440,3 +440,30 @@ input[type=submit]:hover {
   border: 1px dotted #00d49d;
   width: 100%;
 }
+
+.contact-grid h2 {
+  color: #00d49d;
+}
+
+.contact-grid{
+  display: grid;
+  grid-template: repeat(2, auto) / 50%;
+  justify-content: center;
+  width: 100%;
+  padding-top: 10%;
+  padding-bottom: 18%;
+  grid-gap: 2px;
+}
+
+.contact-icons {
+  display: inline-grid;
+  grid-template: 200px / repeat(4, 33%);
+  justify-content: center;
+  width: 100%;
+  grid-gap: 30px;
+}
+
+.contact-icons img {
+  width: 100px;
+  height: 100px;
+}
