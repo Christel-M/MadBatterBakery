@@ -276,7 +276,7 @@ input[type=submit]:hover {
   background-color: #04ba8b;
 }
 
-.products-hero{
+.cookies-hero{
   background-image: url("https://images.unsplash.com/photo-1531685932387-e60fae5f6163?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"),linear-gradient(rgba(255,255,255,0.2),rgba(0,0,0,0.2));
   background-blend-mode: overlay;
   background-position: center;
@@ -284,7 +284,33 @@ input[type=submit]:hover {
 }
 
 
-.products-hero{
+.cookies-hero{
+  color: #000000;
+  padding: 12% 18% 14% 18%;
+}
+
+.cakes-hero{
+  background-image: url("https://images.unsplash.com/photo-1542826438-bd32f43d626f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1456&q=80"),linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3));
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 100px;
+}
+
+
+.cakes-hero{
+  color: #000000;
+  padding: 12% 18% 14% 18%;
+}
+
+.muffins-hero{
+  background-image: url("https://images.unsplash.com/photo-1474625342403-1b8a2c0f7215?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1502&q=80"),linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.3));
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 100px;
+}
+
+
+.muffins-hero{
   color: #000000;
   padding: 12% 18% 14% 18%;
 }
@@ -341,14 +367,21 @@ input[type=submit]:hover {
   padding-top: 100px;
   width: 100%;
   height: 100%;
-  overflow: auto;
-  background-color: rgba(255,255,255,0.4);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  background-color: rgba(0,0,0,0.5);
 }
 
 .description-modal{
   position: relative;
-  background-color: #baf0d8;
+  background-color: #e5e5e5;
   margin: auto;
+  width: 700px;
+  height: 700px;
+  top: 1%;
+  bottom: 20%;
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
@@ -356,11 +389,31 @@ input[type=submit]:hover {
 }
 
 @-webkit-keyframes animatebottom {
-    from {bottom:300px; opacity:0}
+    from {bottom:-300px; opacity:1}
     to {bottom:0; opacity:1}
 }
 
 @keyframes animatebottom {
-    from {bottom:300px; opacity:0}
+    from {bottom:-300px; opacity:1}
     to {bottom:0; opacity:1}
+}
+
+.modal-imgs{
+  height: 470px;
+  width: 470px !important;
+}
+
+.close_it {
+  color: white;
+  float: right;
+  margin-right: 24%;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close_it:hover,
+.close_it:focus {
+  color: #00d49d;
+  text-decoration: none;
+  cursor: pointer;
 }

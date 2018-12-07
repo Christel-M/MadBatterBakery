@@ -1,0 +1,31 @@
+<section class="page-grid">
+  <div class="cakes-hero center">
+    <h1>Cakes</h1>
+    <p>The intensive care that we dedicate to for our packing and wrapping material is a reflection of our deep concern regarding our client’s satisfaction and food safety.</p>
+  </div>
+
+  <div class="product-grid center">
+    <%CAKES.each do |cake| %>
+    <div class="product-display">
+      <img class="imgs" src=<%=cake.images%>> <br>
+      <p><strong><%=cake.name%> &nbsp
+      $<%=cake.price.round(2)%></strong></p>
+      <a id="showdes" class="primary-btn">View Product</a>
+
+      <div class="product-description center hidden">
+        <span class="close_it">&times;</span>
+        <div class="description-modal">
+        <img class="modal-imgs" src=<%=cake.images%>> <br>
+        <h3><strong><%=cake.name%> &nbsp
+        $<%=cake.price.round(2)%></strong></h3>
+        <strong>QTY &nbsp</strong><input type="number" name="quantity" min="1" max="100" placeholder="1">
+        <p><%=cake.description%></p>
+        <a class="primary-btn">Add To Cart</a>
+        </div>
+      </div>
+
+    </div>
+    <%end%>
+  </div>
+
+</section>

@@ -1,7 +1,6 @@
-source "https://rubygems.org"
-
-ruby "2.3.7"
+source "https://rubygems.org" do
 
 gem "sinatra"
-gem "sinatra/reloader"
-gem "pp"
+gem "actionmailer"
+
+end
