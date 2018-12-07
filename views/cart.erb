@@ -1,26 +1,9 @@
-<section class="page-grid catalog">
-  <div class="product-grid center">
-    <%PRODUCTS.each do |product| %>
-    <div class="product-display">
-      <img class="imgs" src=<%=product.images%>> <br>
-      <p><strong><%=product.name%> &nbsp
-      $<%=product.price.round(2)%></strong></p>
-      <a id="showdes" class="primary-btn">View Product</a>
-
-      <div class="product-description center hidden">
-        <span class="close_it">&times;</span>
-        <div class="description-modal">
-        <img class="modal-imgs" src=<%=product.images%>> <br>
-        <h3><strong><%=product.name%> &nbsp
-        $<%=product.price.round(2)%></strong></h3>
-        <strong>QTY &nbsp</strong><input type="number" name="quantity" min="1" max="100" placeholder="1">
-        <p><%=product.description%></p>
-        <a class="primary-btn">Add To Cart</a>
-        </div>
-      </div>
-
+<section class="page-grid">
+  <div class="contact-grid center">
+    <h1>Cart</h1>
+    <div>
+        <p>You have no items in your shopping cart!</p>
+        <a class="primary-btn" href="/catalog">SHOP NOW</a>
+        <p style="height: 80px;"></p>
     </div>
-    <%end%>
-  </div>
-
 </section>
