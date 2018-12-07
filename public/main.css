@@ -340,8 +340,16 @@ input[type=submit]:hover {
     color: #00d49d;
 }
 
-.product-grid{
+.catalog-grid{
+  display: block;
   padding-top: 5%;
+  position: relative;
+  padding-bottom: 10%;
+  background-color: #f1f1f1;
+}
+
+.product-grid{
+  /* padding-top: 5%; */
   padding-bottom: 10%;
   background-color: #f1f1f1;
   display: grid;

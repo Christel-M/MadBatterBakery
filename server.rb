@@ -24,9 +24,9 @@ Cake.new("Italian Almond Cream Cake", "Two layers of rum soaked buttermilk pound
 Muffin.new("Corn Yogurt Muffin", "This rich yogurt muffin is enhanced by a splash of real rum flavour and sits atop a delicious ginger layer.", 3.45, 40, "http://harvestbakery.com/wp-content/uploads/2016/04/CornMuffin_clipped_rev_1.png")
 Muffin.new("Chocolate Cupcake", "Our Chocolate cupcake Log is the perfect winter single-serving dessert. ", 3.25, 25, "https://mrsmaxwellspartycakes.com/wp-content/uploads/2017/11/11-Cupcakes-Chocolate.png")
 Muffin.new("Berry Fusion Yogurt Muffin", "Succulent yogurt and berry fusion with a caramel center and chocolate genoise base.", 3.23, 30, "http://harvestbakery.com/wp-content/uploads/2016/04/Berry-FusionMuffin_clipped_rev_1.png")
-# Muffin.new("Chocolate Chip Yogurt Muffin")
-# Muffin.new()
-# Muffin.new()
+Muffin.new("Cookies & Cream Cupcakes", "Rich chocolate cupcake, with a creamy Oreo cookie frosting, garnished with a sprinkling of Oreo.", 5.33, 20, "http://www.laroccacakes.com/wp-content/uploads/2018/09/300117_A.png")
+Muffin.new("Chocolate Chip Yogurt Muffin", "This creamy chocolate chip and yogurt cupcake creation is topped with a thick layer of light.", 4.56, 22, "http://harvestbakery.com/wp-content/uploads/2016/04/ChocChipMuffin_clipped_rev_1.png")
+Muffin.new("Vanilla Bean Cupcakes", "Fluffy vanilla cupcake, topped with a swirl of vanilla bean icing and a colourful pink flower.", 4.44, 30, "http://www.laroccacakes.com/wp-content/uploads/2018/09/300135_A.png")
 
 # pp PRODUCTS
 
