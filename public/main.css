@@ -281,10 +281,6 @@ input[type=submit]:hover {
   background-blend-mode: overlay;
   background-position: center;
   height: 100px;
-}
-
-
-.cookies-hero{
   color: #000000;
   padding: 12% 18% 14% 18%;
 }
@@ -294,10 +290,6 @@ input[type=submit]:hover {
   background-blend-mode: overlay;
   background-position: center;
   height: 100px;
-}
-
-
-.cakes-hero{
   color: #000000;
   padding: 12% 18% 14% 18%;
 }
@@ -307,12 +299,22 @@ input[type=submit]:hover {
   background-blend-mode: overlay;
   background-position: center;
   height: 100px;
-}
-
-
-.muffins-hero{
   color: #000000;
   padding: 12% 18% 14% 18%;
+}
+
+.catalog-hero{
+  background-image: url("https://images.unsplash.com/photo-1543060625-8ad3aa33a339?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"),linear-gradient(rgba(0,0,0,0.3), rgba(255,255,255,0.4));
+  background-blend-mode: overlay;
+  background-position: center;
+  height: 100px;
+  color: #000000;
+  padding: 12% 18% 14% 18%;
+}
+
+.catalog{
+  padding-bottom: 10%;
+  background-color: #f1f1f1;
 }
 
 .alert-box {
@@ -340,17 +342,9 @@ input[type=submit]:hover {
     color: #00d49d;
 }
 
-.catalog-grid{
-  display: block;
-  padding-top: 5%;
-  position: relative;
-  padding-bottom: 10%;
-  background-color: #f1f1f1;
-}
-
 .product-grid{
-  /* padding-top: 5%; */
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 9%;
   background-color: #f1f1f1;
   display: grid;
   grid-template: auto / repeat(3, 30%);
@@ -424,4 +418,25 @@ input[type=submit]:hover {
   color: #00d49d;
   text-decoration: none;
   cursor: pointer;
+}
+
+.about-hero{
+  background-image: url("https://images.unsplash.com/photo-1543324402-c711a3d43289?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"),linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5));
+  background-blend-mode: overlay;
+  background-position: 0 36%;
+  height: 250px;
+  color: #ffffff;
+  padding: 12% 18% 14% 18%;
+}
+
+.about{
+  display: grid;
+  padding: 2%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.border-hr{
+  border: 1px dotted #00d49d;
+  width: 100%;
 }

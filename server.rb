@@ -60,3 +60,7 @@ end
 get "/catalog" do
   erb :catalog
 end
+
+get "/about" do
+  erb :about
+end
